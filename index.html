@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aurelia — Luxury Real Estate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="container header__inner">
+
+        <a href="#" class="logo">
+            AURELIA
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <nav class="nav">
+
+            <a href="#properties">Properties</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <a href="#contact" class="header__button">
+            Find a Property
+        </a>
+
+
+        <!-- MOBILE MENU -->
+
+        <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle"
+        >
+
+        <label
+            for="menu-toggle"
+            class="menu-button"
+            aria-label="Open menu"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </label>
+
+
+        <div class="mobile-menu">
+
+            <nav>
+
+                <a href="#properties">
+                    Properties
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#locations">
+                    Locations
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+            <p>
+                MIAMI · NEW YORK · LOS ANGELES
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero__overlay"></div>
+
+            <div class="container hero__content">
+
+                <p class="hero__eyebrow">
+                    LUXURY REAL ESTATE
+                </p>
+
+                <h1>
+                    Find a place<br>
+                    <span>worth calling home.</span>
+                </h1>
+
+                <p class="hero__description">
+                    Exceptional properties. Remarkable locations.
+                    A refined approach to finding your next home.
+                </p>
+
+                <div class="hero__actions">
+
+                    <a href="#properties" class="button button--light">
+                        Explore Properties
+                    </a>
+
+                    <a href="#about" class="button button--outline">
+                        Discover Aurelia
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero__location">
+                <span>01</span>
+                <p>Miami · New York · Los Angeles</p>
+            </div>
+
+        </section>
+
+
+<!-- FEATURED PROPERTIES -->
+
+<section class="properties" id="properties">
+
+    <div class="container">
+
+        <div class="properties__top">
+
+            <div>
+                <p class="section-label">SELECTED PROPERTIES</p>
+
+                <h2>
+                    Spaces with<br>
+                    <em>character.</em>
+                </h2>
+            </div>
+
+            <p class="properties__intro">
+                Explore a carefully selected collection of
+                exceptional residences in the world's most
+                desirable locations.
+            </p>
+
+        </div>
+
+
+        <div class="properties__grid">
+
+            <!-- PROPERTY 1 -->
+
+            <article class="property-card">
+
+                <div class="property-card__image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                        alt="Modern luxury house">
+
+                    <span class="property-card__tag">
+                        FEATURED
+                    </span>
+
+                </div>
+
+                <div class="property-card__content">
+
+                    <div>
+                        <p class="property-card__location">
+                            LOS ANGELES · CALIFORNIA
+                        </p>
+
+                        <h3>
+                            The Pacific Residence
+                        </h3>
+                    </div>
+
+                    <p class="property-card__price">
+                        $4,850,000
+                    </p>
+
+                    <div class="property-card__details">
+
+                        <span>4 Beds</span>
+                        <span>3 Baths</span>
+                        <span>3,240 SQ FT</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 2 -->
+
+            <article class="property-card">
+
+                <div class="property-card__image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+                        alt="Luxury modern interior">
+
+                </div>
+
+                <div class="property-card__content">
+
+                    <div>
+                        <p class="property-card__location">
+                            MIAMI · FLORIDA
+                        </p>
+
+                        <h3>
+                            Casa Maré
+                        </h3>
+                    </div>
+
+                    <p class="property-card__price">
+                        $3,290,000
+                    </p>
+
+                    <div class="property-card__details">
+
+                        <span>3 Beds</span>
+                        <span>3 Baths</span>
+                        <span>2,680 SQ FT</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 3 -->
+
+            <article class="property-card">
+
+                <div class="property-card__image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+                        alt="Contemporary luxury home">
+
+                    <span class="property-card__tag">
+                        NEW
+                    </span>
+
+                </div>
+
+                <div class="property-card__content">
+
+                    <div>
+                        <p class="property-card__location">
+                            NEW YORK · NEW YORK
+                        </p>
+
+                        <h3>
+                            Hudson House
+                        </h3>
+                    </div>
+
+                    <p class="property-card__price">
+                        $5,750,000
+                    </p>
+
+                    <div class="property-card__details">
+
+                        <span>5 Beds</span>
+                        <span>4 Baths</span>
+                        <span>4,120 SQ FT</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ABOUT AURELIA -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about__grid">
+
+            <!-- LEFT CONTENT -->
+
+            <div class="about__content">
+
+                <p class="section-label">
+                    ABOUT AURELIA
+                </p>
+
+                <h2>
+                    Exceptional spaces.<br>
+                    <em>Thoughtfully found.</em>
+                </h2>
+
+                <p class="about__text">
+                    Aurelia is an independent real estate studio
+                    dedicated to discovering exceptional homes and
+                    connecting them with people who appreciate
+                    thoughtful architecture, considered design and
+                    timeless quality.
+                </p>
+
+                <p class="about__text">
+                    From contemporary residences overlooking the
+                    Pacific to historic properties in the heart of
+                    New York, we believe every home should tell
+                    a story.
+                </p>
+
+                <a href="#contact" class="about__link">
+                    Discover our story
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+
+            <div class="about__visual">
+
+                <div class="about__image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=85"
+                        alt="Luxury interior">
+
+                </div>
+
+                <div class="about__caption">
+                    <span>01</span>
+                    <p>
+                        Architecture · Design · Lifestyle
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <div class="about__stats">
+
+            <div class="stat">
+
+                <strong>15<span>+</span></strong>
+
+                <p>
+                    Years of<br>
+                    experience
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>240<span>+</span></strong>
+
+                <p>
+                    Properties<br>
+                    represented
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>18</strong>
+
+                <p>
+                    Cities across<br>
+                    the US
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <strong>96<span>%</span></strong>
+
+                <p>
+                    Client<br>
+                    satisfaction
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- OUR APPROACH -->
+
+<section class="approach" id="services">
+
+    <div class="container">
+
+        <div class="approach__header">
+
+            <div>
+                <p class="section-label">
+                    OUR APPROACH
+                </p>
+
+                <h2>
+                    A more considered<br>
+                    <em>way to find home.</em>
+                </h2>
+            </div>
+
+            <p class="approach__intro">
+                Finding the right property is about more than
+                location and square footage. It is about discovering
+                a place that feels unmistakably yours.
+            </p>
+
+        </div>
+
+
+        <div class="approach__grid">
+
+            <!-- LEFT -->
+
+            <div class="approach__steps">
+
+                <div class="approach__step">
+
+                    <div class="approach__number">
+                        01
+                    </div>
+
+                    <div class="approach__step-content">
+
+                        <h3>
+                            Curation
+                        </h3>
+
+                        <p>
+                            We carefully select properties with
+                            distinctive architecture, exceptional
+                            locations and lasting character.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="approach__step">
+
+                    <div class="approach__number">
+                        02
+                    </div>
+
+                    <div class="approach__step-content">
+
+                        <h3>
+                            Expertise
+                        </h3>
+
+                        <p>
+                            Our local knowledge and market insight
+                            help you navigate every detail with
+                            clarity and confidence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="approach__step">
+
+                    <div class="approach__number">
+                        03
+                    </div>
+
+                    <div class="approach__step-content">
+
+                        <h3>
+                            Discretion
+                        </h3>
+
+                        <p>
+                            From first conversation to final
+                            signature, we provide a private,
+                            thoughtful and highly personal service.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="approach__link">
+                    Explore our services
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+
+            <div class="approach__visual">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
+                    alt="Contemporary luxury architecture">
+
+                <div class="approach__image-label">
+                    <span>02</span>
+                    <p>
+                        AURELIA / APPROACH
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==============================
+     FEATURED LOCATIONS
+================================ -->
+
+<section class="locations" id="locations">
+
+    <div class="container">
+
+        <div class="locations__header">
+
+            <div>
+                <p class="section-label">
+                    FEATURED LOCATIONS
+                </p>
+
+                <h2>
+                    Live somewhere<br>
+                    <em>extraordinary.</em>
+                </h2>
+            </div>
+
+            <p class="locations__intro">
+                From coastal retreats to architectural city
+                residences, discover places that offer a
+                different perspective on living.
+            </p>
+
+        </div>
+
+
+        <div class="locations__grid">
+
+            <a href="#" class="location-card location-card--large">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=85"
+                    alt="New York city">
+
+                <div class="location-card__overlay"></div>
+
+                <div class="location-card__content">
+
+                    <span>01</span>
+
+                    <div>
+                        <p>NEW YORK</p>
+                        <h3>Manhattan</h3>
+                    </div>
+
+                    <strong>↗</strong>
+
+                </div>
+
+            </a>
+
+
+            <a href="#" class="location-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85"
+                    alt="Miami beach">
+
+                <div class="location-card__overlay"></div>
+
+                <div class="location-card__content">
+
+                    <span>02</span>
+
+                    <div>
+                        <p>FLORIDA</p>
+                        <h3>Miami</h3>
+                    </div>
+
+                    <strong>↗</strong>
+
+                </div>
+
+            </a>
+
+
+            <a href="#" class="location-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=1200&q=85"
+                    alt="Los Angeles">
+
+                <div class="location-card__overlay"></div>
+
+                <div class="location-card__content">
+
+                    <span>03</span>
+
+                    <div>
+                        <p>CALIFORNIA</p>
+                        <h3>Los Angeles</h3>
+                    </div>
+
+                    <strong>↗</strong>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     TESTIMONIAL
+================================ -->
+
+<section class="testimonial">
+
+    <div class="container">
+
+        <div class="testimonial__inner">
+
+            <p class="section-label">
+                CLIENT STORIES
+            </p>
+
+            <blockquote>
+                “Aurelia understood exactly what we were
+                looking for before we even knew how to
+                describe it.”
+            </blockquote>
+
+            <div class="testimonial__author">
+
+                <div class="testimonial__line"></div>
+
+                <div>
+                    <strong>Alexander Morgan</strong>
+                    <span>Los Angeles · California</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     CONTACT CTA
+================================ -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact__inner">
+
+            <div>
+
+                <p class="section-label">
+                    START A CONVERSATION
+                </p>
+
+                <h2>
+                    Your next home<br>
+                    <em>starts here.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="contact__right">
+
+                <p>
+                    Tell us what you are looking for and
+                    our team will help you discover a property
+                    that feels like home.
+                </p>
+
+                <a href="mailto:hello@aurelia.com" class="contact__button">
+                    Get in touch
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ==============================
+     FOOTER
+================================ -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__top">
+
+            <a href="#" class="footer__logo">
+                AURELIA
+            </a>
+
+            <p>
+                Luxury real estate,<br>
+                thoughtfully found.
+            </p>
+
+        </div>
+
+
+        <div class="footer__grid">
+
+            <div class="footer__column">
+
+                <span>EXPLORE</span>
+
+                <a href="#properties">Properties</a>
+                <a href="#locations">Locations</a>
+                <a href="#about">About</a>
+                <a href="#services">Our Approach</a>
+
+            </div>
+
+
+            <div class="footer__column">
+
+                <span>CONNECT</span>
+
+                <a href="mailto:hello@aurelia.com">
+                    Email
+                </a>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+            </div>
+
+
+            <div class="footer__column footer__column--right">
+
+                <span>OFFICES</span>
+
+                <p>New York</p>
+                <p>Miami</p>
+                <p>Los Angeles</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer__bottom">
+
+            <p>
+                © 2026 Aurelia Real Estate. All rights reserved.
+            </p>
+
+            <p>
+                Privacy · Terms
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+    </main>
+
+
+</body>
+</html>
